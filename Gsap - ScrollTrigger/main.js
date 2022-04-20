@@ -1,11 +1,16 @@
-gsap.to(".a", {
-    duration: 3,
-    x: 400,
-    ease: "elastic" // bounce.inOut, bounce, bounce.in, back, linear
+/* 
+
+gsap.to(".box", {
+    x: 100,
+    stagger: {each: 1}
 });
 
-gsap.to(".b", {
-    duration: 3,
+*/
+
+gsap.to(".box", {
     x: 400,
-    ease: "back(6)"
+    stagger: {
+        amount: 1, // all .box share 1s
+        from: "edges" // center
+    }
 });
