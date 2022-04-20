@@ -1,12 +1,11 @@
 gsap.to(".a", {
-    duration: 2,
+    duration: 3,
     x: 400,
-    repeat: -1,
-    yoyo: true
+    ease: "elastic" // bounce.inOut, bounce, bounce.in, back, linear
 });
 
 gsap.to(".b", {
-    duration: 2,
+    duration: 3,
     x: 400,
-    delay: 2
+    ease: "back(6)"
 });
