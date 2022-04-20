@@ -1,11 +1,12 @@
-gsap.fromTo(".a", {
-    x: 700,
-    y: 400,
-    opacity: 0
-}, {
+gsap.to(".a", {
+    duration: 2,
     x: 400,
-    y: 200,
-    scale: 3,
-    opacity: 1,
-    duration: 3
+    repeat: -1,
+    yoyo: true
+});
+
+gsap.to(".b", {
+    duration: 2,
+    x: 400,
+    delay: 2
 });
