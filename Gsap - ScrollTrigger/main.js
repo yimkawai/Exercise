@@ -51,10 +51,20 @@ animation
 
     ////////////////////////////
 
-           */
-
     var animation = gsap.timeline();
     animation
         .to(".a", {duration: 2, x: 400})
         .to(".b", {duration: 1, x: 400}, 3) // 3秒開始
         .to(".c", {duration: 1, x: 400}, "< 0.5")   // 同b timeline 一齊開始 (遲0.5s)
+
+            ////////////////////////////
+
+           */
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".c", {
+    scrollTrigger: ".c",
+    x: 400,
+    rotation: 360,
+    duration: 3
+});
