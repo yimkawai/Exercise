@@ -59,12 +59,35 @@ animation
 
             ////////////////////////////
 
-           */
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".c", {
-    scrollTrigger: ".c",
+    scrollTrigger: {
+        trigger: ".c",
+        start: "top center",
+        markers: true,
+        toggleActions: "restart pause reverse pause" 
+        // play pause resume reverse restart reset complete none
+    },
     x: 400,
     rotation: 360,
+    duration: 3
+});
+////////////////////////////
+
+*/
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".c", {
+    scrollTrigger: {
+        trigger: ".c",
+        start: "top center",
+        end: "top 100px",
+        scrub: 3,
+
+    },
+    x: 400,
+    rotation: 360,
+    ease: "none",
     duration: 3
 });
