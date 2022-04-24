@@ -75,7 +75,6 @@ gsap.to(".c", {
 });
 ////////////////////////////
 
-*/
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".c", {
@@ -84,10 +83,14 @@ gsap.to(".c", {
         start: "top center",
         end: "top 100px",
         scrub: 3,
-
+        pin: ".ghost"
     },
     x: 400,
     rotation: 360,
     ease: "none",
     duration: 3
 });
+
+////////////////////////////
+
+*/

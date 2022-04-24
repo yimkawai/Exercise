@@ -1,0 +1,72 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+}
+
+.section-pad {
+    padding: 0 5vw;
+}
+
+.container {
+    max-width: 810px;
+    margin: auto;
+}
+
+.intro {
+    background-image: url(images/index.jpg);
+    color: white;
+}
+
+.bg-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    display: block;
+    text-align: center;
+    margin: 60px auto;
+    max-width: 112px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.intro p {
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    50% {
+        transform: translate(0);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.appear {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
