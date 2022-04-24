@@ -8,6 +8,7 @@ body {
 }
 
 .section {
+    position: relative;
     height: 100vh;
     display: flex;
 }
@@ -69,4 +70,23 @@ body {
     animation-duration: 3s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
+}
+
+.marquee {
+    position: absolute;
+    top: 3vh;
+    left: 0;
+    width: 100%;
+    line-height: 1;
+    overflow: hidden;
+}
+
+.marquee span {
+    white-space: nowrap;
+    display: block;
+    position: relative;
+}
+
+.mix-difference {
+    mix-blend-mode: difference;
 }
